@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 class Result {
@@ -58,6 +59,7 @@ Future<Result> download(String url) async {
   var cl = -1;
   var err = '';
   HttpClient client;
+  Timer t;
 
   var progress = 0;
   var prevAccum = 0;
@@ -92,6 +94,10 @@ Future<Result> download(String url) async {
     ttfbMs = totalSw.elapsedMilliseconds;
     var prevMs = ttfbMs;
 
+    t = Timer(Duration(seconds: 400), () async {
+      client.close(force: true);
+    });
+
     await for (var val in response) {
       accum += val.length;
       var p = (accum / cl * 100).round();
@@ -116,6 +122,7 @@ Future<Result> download(String url) async {
   } catch (e) {
     err = e.toString();
   }
+  t?.cancel();
   totalSw.stop();
   client?.close();
   return Result(url, started, DateTime.now(), totalSw.elapsedMilliseconds,
