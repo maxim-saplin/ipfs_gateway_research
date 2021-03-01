@@ -7,7 +7,7 @@ A total of 29 gateways were chosen in late February 2021 from the list at https:
 A Dart script was written (*download_stats.dart*) which enumerates thorough the 29 gateways, requests seuentialy every of the four files by it's hash/CID (https://{gatways-address}/ipfs/{CID}) and measures:
 - latency in milliseconds (time to first bytes) 
 - average throughput (file size divided by time it took to complete download)
-- checks if **content-length** header is returned in response
+- checks if **content-length** header is returned in response. Content length determines if download progress is shown and if one can pause/resume the download
 - logs failures (no response, receivning respone interrupted by server side or killed by client on 400 seconds timeout)
 - saves test run results (29*4=126 rows per run) to CSV to be further analyzed
 The script was executed on Linux VM in a datacenter in Ireland and on Windows PC in Belarus for the course of 4 days, a total of 10 runs per environment was conducted.
