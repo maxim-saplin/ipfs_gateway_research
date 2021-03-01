@@ -14,8 +14,8 @@ The script was executed on Linux VM in a datacenter in Ireland and on Windows PC
 Complete results are available in /data/_ipfs_gtwy_analysis.xlsx_ file. Below is a summary for VM environment - the general conclusions are similar for both environments though VM having better connectivity speed wasn't a bottlneck for testing gateways' max throughput.
 
 ## Smaller files A (8.9MB) and B (30MB)	
-** Throughput in MegaBytes per second	
-*** % of total 20 requests (10 per file)
+ * Throughput in MegaBytes per second	
+ ** % of total 20 requests (10 per file)
 
 |                        | Avg Throughput<br>(MB/s)\* | Min   | Max   | Avg Latency<br>(ms) | Content-length | % Downloads failed\*\* |
 | ---------------------- | -------------------------- | ----- | ----- | ------------------- | -------------- | ---------------------- |
