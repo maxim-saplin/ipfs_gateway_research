@@ -52,3 +52,42 @@ Complete results are available in /data/\_ipfs_gtwy_analysis.xlsx file. Below is
 | gateway.ravenland.org  | Never connected            |
 | hardbin.com            | Never connected            |
 | ipfs.jbb.one           | Never connected            |
+
+## Lager files C (75.4MB) and D (415.9MB)
+
+\* latency for C and D issupposed to be lower since the files are downloaded right after A and B
+
+\** larger files' downloads are more prone to be interrupted, also there was 400 seconds timeout to complete download (slow downloads were interrupted on client sides)
+
+|                        | Avg Throughput<br>(MB/s) | Min<br>(MB/s) | Max<br>(MB/s) | Avg Latency<br>(ms)\* | Content-length | % Downloads failed \*\* |
+| ---------------------- | ------------------------ | ------------- | ------------- | --------------------- | -------------- | ----------------------- |
+|  |
+| cloudflare-ipfs.com    | 29,66                    | 19,26         | 43,11         | 51                    | No             | 0%                      |
+| cf-ipfs.com            | 27,85                    | 19,06         | 39,68         | 87                    | No             | 0%                      |
+| 10.via0.com            | 27,79                    | 0,08          | 43,12         | 131                   | Yes            | 10%                     |
+| ipfs.cf-ipfs.com       | 20,99                    | 5,47          | 41,87         | 120                   | No             | 0%                      |
+| gateway.ipfs.io        | 17,05                    | 0,21          | 21,25         | 99                    | Yes            | 0%                      |
+| ipfs.greyh.at          | 14,46                    | 5,44          | 19,33         | 459                   | Yes            | 0%                      |
+| ipfs.drink.cafe        | 12,95                    | 4,69          | 19,8          | 632                   | Yes            | 0%                      |
+| ipfs.sloppyta.co       | 10,87                    | 3,55          | 13,55         | 210                   | Yes            | 0%                      |
+| ipfs.io                | 9,68                     | 3,26          | 12,87         | 104                   | Yes            | 0%                      |
+| snap1.d.tube           | 9,22                     | 3,37          | 13,88         | 138                   | Yes            | 0%                      |
+| ipfs.telos.miami       | 9,10                     | 3,10          | 12,89         | 795                   | Yes            | 0%                      |
+| robotizing.net         | 8,81                     | 3,49          | 12,99         | 450                   | Yes            | 0%                      |
+| ipfs.fleek.co          | 8,61                     | 2,69          | 13,9          | 919                   | Yes            | 15%                     |
+| ipfs.oceanprotocol.com | 8,55                     | 8,07          | 9,124         | 333                   | Yes            | 70%                     |
+| ipfs.overpi.com        | 7,91                     | 3,26          | 11,85         | 1020                  | Yes            | 0%                      |
+| ipfs.best-practice.se  | 6,59                     | 0,74          | 20,69         | 1325                  | Yes            | 35%                     |
+| dweb.link              | 6,32                     | 0,37          | 10,16         | 2077                  | Yes            | 0%                      |
+| jacl.tech              | 6,12                     | 1,31          | 12,79         | 2249                  | Yes            | 0%                      |
+| ninetailed.ninja       | 5,89                     | 2,26          | 10,15         | 474                   | Yes            | 35%                     |
+| ipfs.infura.io         | 3,80                     | 1,01          | 12,38         | 1756                  | Yes            | 40%                     |
+| ipfs.yt                | 1,75                     | 0,61          | 4,766         | 2680                  | No             | 10%                     |
+| gateway.pinata.cloud   | 1,67                     | 1,00          | 2,542         | 415                   | Yes            | 10%                     |
+| ipfs.runfission.com    | 1,57                     | 0,18          | 3,587         | 5116                  | Yes            | 15%                     |
+| ipfs.2read.net         | 0,19                     | 0,15          | 0,749         | 161                   | Yes            | 55%                     |
+| trusti.id              | 0,16                     | 0,06          | 0,592         | 2094                  | Yes            | 50%                     |
+| ipfs.k1ic.com          | 0,12                     | 0,00          | 0,194         | 2948                  | Yes            | 60%                     |
+| gateway.ravenland.org  | Never connected          |
+| hardbin.com            | Never connected          |
+| ipfs.jbb.one           | Never connected          |
