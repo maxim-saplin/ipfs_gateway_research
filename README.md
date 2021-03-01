@@ -20,7 +20,7 @@ Complete results are available in /data/\_ipfs_gtwy_analysis.xlsx file. Below is
  
  \** % of total 20 requests (10 per file)
 
-|                        | Avg Throughput<br>(MB/s)\* | Min   | Max   | Avg Latency<br>(ms) | Content-length | % Downloads failed\*\* |
+|                        | Avg Throughput<br>(MB/s)\* | Min<br>(MB/s)   | Max<br>(MB/s)   | Avg Latency<br>(ms) | Content-length | % Downloads failed\*\* |
 | ---------------------- | -------------------------- | ----- | ----- | ------------------- | -------------- | ---------------------- |
 |  |
 | cf-ipfs.com            | 15,74                      | 10,61 | 22,25 | 150                 | No             | 0%                     |
