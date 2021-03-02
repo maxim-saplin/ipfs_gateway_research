@@ -20,3 +20,4 @@ doc/api/
 *.js.deps
 *.js.map
 *.csv
+data/~$_ipfs_gtwy_analysis.xlsx
