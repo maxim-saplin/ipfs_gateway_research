@@ -19,7 +19,7 @@ The script was executed on Linux VM in a datacenter in Ireland and on Windows PC
 4. When the test is complete the results will be saved to a CSV file and name of the file will be printed on the screen
 
 # Results
-Complete results are available in /data/\_ipfs_gtwy_analysis.xlsx file. Below is a summary for VM environment - the general conclusions are similar for both environments though VM having better connectivity speed wasn't a bottlneck for testing gateways' max throughput.
+Complete results are available in /data/\_ipfs_gtwy_analysis.xlsx file. Below is a summary for a client running on Azure VM  - the general conclusions are similar for both environments (desktop, VM) though VM having better connectivity speed wasn't a bottlneck for testing gateways' max throughput.
 
 ## Smaller files A (8.9MB) and B (30MB)	
  \* Throughput in MegaBytes per second	
