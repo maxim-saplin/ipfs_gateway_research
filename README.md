@@ -4,7 +4,7 @@ There're various HTTP gateways availble on the internet. Lists can be found here
 # Research Design
 A total of 29 gateways were chosen in late February 2021 from the list at https://luke.lol/ipfs.php (those green ones at the time of access).
 2 IPFS nodes were set-up on Raspberry Pi (located in different towns), both sitting behind NAT: ipfs-go version 0.8.0, AutoRelay option turned on. 4 files were pinned to these nodes, file sizes: 8.9, 30, 75.4 and 415.9 megabytes (files reffered to as A, B, C and D accordingly).
-A Dart script was written (*download_stats.dart*) which enumerates through the 29 gateways, sequentialy requests each of the four files by hash/CID (https://{gateway-address}/ipfs/{CID}) and measures:
+A Dart script was written (*download_stats.dart*) which enumerated through the 29 gateways, sequentialy requested each of the four files by hash/CID (https://{gateway-address}/ipfs/{CID}) and measured:
 - latency in milliseconds (time to first byte) 
 - average throughput (file size divided by time it took to complete download, time includes latency)
 - checks if **content-length** header is returned in response. Content length determines if download progress is shown and if one can pause/resume the download
